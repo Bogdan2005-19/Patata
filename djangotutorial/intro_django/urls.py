@@ -20,6 +20,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Aquí añadimos nuestras rutas personalizadas
     path('hello/', views.hello_world),
     path('hello/<str:name>', views.hello_bogdan),
     path('hello/<str:name>/<int:num>', views.hello_num),
